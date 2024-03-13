@@ -11,8 +11,8 @@
   ./configure
   #+end_src
   You might need some additional flags to configure the build to your liking. Those options are similar to those of QMCkl GPU itself :
-  - ~--with-qmckl_gpu=...~ : if autoconf doesn't find QMCkl GPU by itself, you need to specify its path. This directory should contain ~lib/~ and ~include/~ subdirectories.
-  - ~--disable-autoflags~ : based on the compiler, the configure will try some default flags to enable offload. In case they do not work, you can disable those automatic flags and specify them manually in the ~CFLAGS~ variable. Compilers supported out of the box for autoflags are gcc, clang and nvc.
+  - ~--with-qmckl_gpu=...~ : if autoconf doesn't find QMCkl SYCL GPU by itself, you need to specify its path. This directory should contain ~lib/~ and ~include/~ subdirectories.
+  - ~--disable-autoflags~ : based on the compiler, the configure will try some default flags to enable offload. In case they do not work, you can disable those automatic flags and specify them manually in the ~CXXFLAGS~ variable.
 - Compile and run them :
   #+begin_src  bash
   make
